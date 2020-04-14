@@ -6,4 +6,4 @@ C:\Users\Diana\source\repos\200421248A2\obj\Debug\_200421248A2.Properties.Resour
 C:\Users\Diana\source\repos\200421248A2\obj\Debug\200421248A2.csproj.GenerateResource.cache
 C:\Users\Diana\source\repos\200421248A2\obj\Debug\200421248A2.exe
 C:\Users\Diana\source\repos\200421248A2\obj\Debug\200421248A2.pdb
-C:\Users\Diana\source\repos\200421248A2\obj\Debug\_200421248A2.Form1.resources
+C:\Users\Diana\source\repos\200421248A2\obj\Debug\_200421248A2.Calculator.resources

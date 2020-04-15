@@ -54,7 +54,7 @@
             this.SquareRoot = new System.Windows.Forms.Button();
             this.Back = new System.Windows.Forms.Button();
             this.Clear = new System.Windows.Forms.Button();
-            this.MemoryDispl = new System.Windows.Forms.TextBox();
+            this.txtMemoryDispl = new System.Windows.Forms.TextBox();
             this.backgroud = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -177,10 +177,11 @@
             this.txtResults.Location = new System.Drawing.Point(24, 27);
             this.txtResults.Multiline = true;
             this.txtResults.Name = "txtResults";
-            this.txtResults.Size = new System.Drawing.Size(534, 42);
+            this.txtResults.Size = new System.Drawing.Size(534, 44);
             this.txtResults.TabIndex = 16;
             this.txtResults.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtResults.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtResults_KeyDown);
+            this.txtResults.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtResultsKeyPress);
             // 
             // ChangeArithmeticSign
             // 
@@ -412,17 +413,17 @@
             this.Clear.UseVisualStyleBackColor = true;
             this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
-            // MemoryDispl
+            // txtMemoryDispl
             // 
-            this.MemoryDispl.BackColor = System.Drawing.SystemColors.Control;
-            this.MemoryDispl.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MemoryDispl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.875F);
-            this.MemoryDispl.Location = new System.Drawing.Point(41, 104);
-            this.MemoryDispl.Multiline = true;
-            this.MemoryDispl.Name = "MemoryDispl";
-            this.MemoryDispl.Size = new System.Drawing.Size(58, 26);
-            this.MemoryDispl.TabIndex = 34;
-            this.MemoryDispl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMemoryDispl.BackColor = System.Drawing.SystemColors.Control;
+            this.txtMemoryDispl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMemoryDispl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.875F);
+            this.txtMemoryDispl.Location = new System.Drawing.Point(41, 104);
+            this.txtMemoryDispl.Multiline = true;
+            this.txtMemoryDispl.Name = "txtMemoryDispl";
+            this.txtMemoryDispl.Size = new System.Drawing.Size(58, 26);
+            this.txtMemoryDispl.TabIndex = 34;
+            this.txtMemoryDispl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // backgroud
             // 
@@ -439,7 +440,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(590, 507);
-            this.Controls.Add(this.MemoryDispl);
+            this.Controls.Add(this.txtMemoryDispl);
             this.Controls.Add(this.backgroud);
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.Back);
@@ -503,7 +504,7 @@
         private System.Windows.Forms.Button SquareRoot;
         private System.Windows.Forms.Button Back;
         private System.Windows.Forms.Button Clear;
-        private System.Windows.Forms.TextBox MemoryDispl;
+        private System.Windows.Forms.TextBox txtMemoryDispl;
         private System.Windows.Forms.TextBox backgroud;
     }
 }

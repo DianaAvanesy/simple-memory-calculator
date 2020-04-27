@@ -1,1 +1,2 @@
-# Assigment2
+# Simple memory calculator
+
